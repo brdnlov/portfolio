@@ -1,4 +1,4 @@
-import type { Componentype, SVGProps } from "react";
+import type { ComponentType, SVGProps } from "react";
 import {
     LayoutGrid,
     User,
@@ -20,7 +20,7 @@ import {
 } from "lucide-react";
 
 type IconMap = {
-    [key: string]: Componentype<SVGProps<SVGSVGElement>>;
+    [key: string]: ComponentType<SVGProps<SVGSVGElement>>;
 };
 
 export const Icons: IconMap = {
