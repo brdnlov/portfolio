@@ -31,7 +31,7 @@ export function Contact() {
             </div>
 
             <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr]">
-                <form className="grid gap-5 rounded-3xl border border-muted/60 bg-muted/40 p-8 shadow-soft">
+                {/* <form className="grid gap-5 rounded-3xl border border-muted/60 bg-muted/40 p-8 shadow-soft">
                     <div className="grid gap-2">
                         <label htmlFor="name" className="text-xs uppercase tracking-[0.2em] text-textSecondary">Name</label>
                         <input
@@ -74,7 +74,7 @@ export function Contact() {
                     >
                         Send Message
                     </button>
-                </form>
+                </form> */}
                 <div className="space-y-6">
                     <div className="rounded-3xl border border-muted/60 bg-muted/40 p-6 shadow-soft">
                         <h4 className="text-lg font-semibold text-white">How I can help</h4>
