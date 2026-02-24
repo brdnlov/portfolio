@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { IBM_Plex_Sans, Sora } from 'next/font/google';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Sidebar } from '../components/SideBar';
 import PageFade from "../components/PageFade";
 import './globals.css';
@@ -44,6 +45,7 @@ export default function Rootlayout({
             </PageFade>
           </div>
         </div>
+        <SpeedInsights />
       </body>
     </html>
   );

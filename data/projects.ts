@@ -9,27 +9,35 @@ export type Project = {
 
 export const projects: Project[] = [
     {
-        title: 'TaskFlow',
-        description: 'A personal portfolio website built with React and Tailwind CSS to showcase my projects and skills.',
-        image: '/taskflow.jpg',
-        tags: ['React', 'Tailwind CSS'],
-        demo: 'https://my-portfolio-demo.com',
-        code: 'https://github.com/my-portfolio'
-    },
-    {
-        title: 'ShopLite',
-        description: 'A personal portfolio website built with React and Tailwind CSS to showcase my projects and skills.',
-        image: '/shoplite.jpg',
-        tags: ['React', 'Tailwind CSS'],
-        demo: 'https://my-portfolio-demo.com',
-        code: 'https://github.com/my-portfolio'
-    },
-    {
-        title: 'Car Rental System Dashboard (Demo Project',
-        description: 'A personal portfolio website built with React and Tailwind CSS to showcase my projects and skills.',
+        title: 'Anime Vault',
+        description: 'A dynamic anime discovery platform where users can browse, search, and explore their favorite series through a responsive web interface.',
         image: '/placeholder.jpg',
-        tags: ['Next.js', 'React', 'Tailwind CSS'],
+        tags: ['Next.js', 'Typescript', 'Tailwind CSS', 'Vercel'],
         demo: 'https://my-portfolio-demo.com',
-        code: 'https://github.com/my-portfolio'
+        code: 'https://github.com/brdnlov/anime_vault'
+    },
+    {
+        title: 'Prompt Publisher',
+        description: 'A full-stack platform with user authentication that allows users to publish, browse, and save AI prompts from other creators.',
+        image: '/placeholder.jpg',
+        tags: ['Next.js', 'Typescript', 'Tailwind CSS', 'Vercel'],
+        demo: 'https://my-portfolio-demo.com',
+        code: 'https://github.com/brdnlov/promptopia'
+    },
+    {
+        title: 'Car Rental System Dashboard',
+        description: 'A car rental management dashboard featuring advanced search functionality and dynamic filtering by brand, make, and model.',
+        image: '/placeholder.jpg',
+        tags: ['Next.js', 'Typescript', 'Tailwind CSS', 'Vercel'],
+        demo: 'https://my-portfolio-demo.com',
+        code: 'https://github.com/brdnlov/CarHub'
+    },
+    {
+        title: '5th Avenue Bagelry',
+        description: 'Developed a responsive, performance-optimized website for 5th Avenue Bagelry in Downtown Long Beach, focused on intuitive navigation, mobile responsiveness, and improved customer conversion.',
+        image: '/placeholder.jpg',
+        tags: ['HTML', 'CSS', 'Javascript', 'AWS'],
+        demo: 'https://my-portfolio-demo.com',
+        code: 'https://github.com/brdnlov/5th-Ave-Bagelry'
     },
 ];

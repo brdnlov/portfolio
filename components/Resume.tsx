@@ -16,7 +16,7 @@ export function Resume() {
                     </p>
                 </div>
                 <a
-                    href="/Brandon_Lov_Resume.pdf"
+                    href="/Resume_Brandon_Lov.pdf"
                     className="inline-flex items-center gap-2 rounded-2xl border border-accent/60 px-5 py-3 text-sm font-semibold text-accent transition
                     hover:border-accent hover:bg-accent/10"
                     target="_blank"
