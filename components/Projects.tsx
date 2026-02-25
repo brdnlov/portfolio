@@ -50,7 +50,7 @@ export function Projects() {
                             <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-surface/90/0 opacity-0 backdrop-blur-sm
                             transition duration-300 group-hover:pointer-events-auto group-hover:bg-surface/90 group-hover:opacity-100">
                                 <div className="flex gap-4">
-                                    {/* <a
+                                    <a
                                         href={project.demo}
                                         target="_blank"
                                         rel="noreferrer"
@@ -58,7 +58,7 @@ export function Projects() {
                                         className="rounded-xl bg-accent px-4 py-2 text-sm font-semibold text-background shadow-soft transition hover:translate-y-0.5 hover:shadow-xl"
                                     >
                                         Demo
-                                    </a> */}
+                                    </a>
                                     <a
                                         href={project.code}
                                         target="_blank"
