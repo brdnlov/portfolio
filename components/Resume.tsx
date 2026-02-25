@@ -38,7 +38,14 @@ export function Resume() {
                             <div className="flex flex-wrap items-start justify-between gap-3">
                                 <div>
                                     <h4 className="text-xl font-semibold text-white">{experience.role}</h4>
-                                    <p className="text-sm text-textSecondary">{experience.company}</p>
+                                    <a
+                                        href={experience.companyUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-accent hover:underline text-sm"
+                                    >
+                                        <p className="text-sm text-textSecondary">{experience.company}</p>
+                                    </a>
                                 </div>
                                 <span className="rounded-full border border-muted/70 bg-surface/70 px-3 py-1 text-xs uppercase tracking-[0.2em] text-textSecondary">
                                     {experience.period}

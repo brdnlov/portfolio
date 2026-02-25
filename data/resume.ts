@@ -1,6 +1,7 @@
 export type Experience = {
     role: string;
     company: string;
+    companyUrl: string;
     period: string;
     bullets: string[];
 };
@@ -9,6 +10,7 @@ export const experiences: Experience[] = [
     {
         role: 'Front-End Developer',
         company: 'Uniquelyme',
+        companyUrl: 'https://uniquely.me',
         period: 'Mar 2025 - Sept 2025',
         bullets: [
             "Reduced page asset payloads from 100MB+ to as low as ~430KB (≤2MB max) by optimizing images, eliminating redundant assets, and improving delivery strategy.",
@@ -23,6 +25,7 @@ export const experiences: Experience[] = [
     {
         role: 'Web Developer',
         company: 'GOLFi',
+        companyUrl: 'https://www.golfiusa.com/',
         period: 'Oct 2025 - Oct 2025',
         bullets: [
             "Redesigned and updated the Tailor Brands website, enhancing functionality, aesthetics, and user experience.",
