@@ -47,10 +47,13 @@ export default function Rootlayout({
             </PageFade>
           </div>
         </div>
+        <footer className="sticky bottom-0 bg-background border-t border-gray-700 py-4 text-center text-sm text-textPrimary">
+          Built by Brandon Lov • Next.js + TypeScript + Tailwind CSS
+        </footer>
         <Analytics />
-
         <SpeedInsights />
       </body>
     </html>
+
   );
 }
