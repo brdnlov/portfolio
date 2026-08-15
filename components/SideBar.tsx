@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
@@ -9,28 +9,20 @@ import { Icons } from "@/components/icons";
 
 export function Sidebar() {
     const [mobileOpen, setMobileOpen] = useState(false);
-    const [mounted, setMounted] = useState(false);
     const pathname = usePathname();
-
-    useEffect(() => {
-        setMounted(true);
-    }, []);
 
     const handleNavigate = () => {
         setMobileOpen(false);
     };
 
-    if (!mounted) return null;
-
     return (
         <>
-            <aside className="sticky top-0 hidden h-screen w-64 shrink-0 border-r border-muted/40 bg-surface/80 p-6 shadow-soft md:flex md:flex-col
-            md:justify-between md:rounded-r-3xl md:border-r-0 md:bg-surface/60 md:backdrop-blur">
+            <aside className="sticky top-0 hidden h-screen w-64 shrink-0 border-r border-muted/40 bg-surface/80 p-6 shadow-soft md:flex md:flex-col md:justify-between md:rounded-r-3xl md:border-r-0 md:bg-surface/60 md:backdrop-blur">
                 <div className="flex flex-col gap-8">
                     <div className="space-y-1">
                         <p className="text-xs uppercase tracking-[0.4em] text-textSecondary">Portfolio</p>
                         <h1 className="font-display text-2xl font-semibold">Brandon Lov</h1>
-                        <p className="text-sm text-textSecondary">Front-end/Web Developer</p>
+                        <p className="text-sm text-textSecondary">Software Engineer</p>
                     </div>
                     <nav className="flex flex-col gap-2">
                         {navigation.map((item) => {
@@ -45,8 +37,7 @@ export function Sidebar() {
                                         : 'text-textSecondary hover:bg-muted/70 hover:text-textPrimary'
                                         }`}
                                 >
-                                    <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-muted/70 text-accent transition group-hover:bg-accent/
-                                    10 group-hover:text-accent">
+                                    <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-muted/70 text-accent transition group-hover:bg-accent/10 group-hover:text-accent">
                                         {Icon && <Icon className="h-4 w-4" />}
                                     </span>
                                     <span>{item.label}</span>
@@ -57,8 +48,7 @@ export function Sidebar() {
                 </div>
             </aside>
 
-            <div className="fixed inset-x-0 top-0 z-40 flex items-center justify-between border-b border-muted/40 bg-surface/90 px-4 py-3
-            backdrop-blur md:hidden">
+            <div className="fixed inset-x-0 top-0 z-40 flex items-center justify-between border-b border-muted/40 bg-surface/90 px-4 py-3 backdrop-blur md:hidden">
                 <div>
                     <p className="text-xs uppercase tracking-[0.4em] text-textSecondary">Portfolio</p>
                     <p className="font-display text-lg font-semibold">Brandon Lov</p>

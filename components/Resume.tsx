@@ -17,8 +17,7 @@ export function Resume() {
                 </div>
                 <a
                     href="/Resume_Brandon_Lov.pdf"
-                    className="inline-flex items-center gap-2 rounded-2xl border border-accent/60 px-5 py-3 text-sm font-semibold text-accent transition
-                    hover:border-accent hover:bg-accent/10"
+                    className="inline-flex items-center gap-2 rounded-2xl border border-accent/60 px-5 py-3 text-sm font-semibold text-accent transition hover:border-accent hover:bg-accent/10"
                     target="_blank"
                     rel="noreferrer"
                 >
@@ -30,8 +29,7 @@ export function Resume() {
             <div className="space-y-10">
                 {experiences.map((experience) => (
                     <div key={experience.role} className="relative pl-10">
-                        <span className="absolute left-0 top-1.5 h-5 w-5 rounded-full border border-accent/60 bg-background text-center text-xs
-                        font-semibold text-accent">
+                        <span className="absolute left-0 top-1.5 h-5 w-5 rounded-full border border-accent/60 bg-background text-center text-xs font-semibold text-accent">
                             ●
                         </span>
                         <div className="rounded-3xl border border-muted/60 bg-muted/40 p-6 shadow-soft">
