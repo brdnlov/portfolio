@@ -8,6 +8,23 @@ export type Experience = {
 
 export const experiences: Experience[] = [
     {
+        role: 'Software Engineer',
+        company: 'Red7 Systems',
+        companyUrl: 'https://red7systems.com/',
+        period: 'March 2026 - Present',
+        bullets: [
+            "Built a production Model Context Protocol (MCP) server exposing 122 role-gated tools with OAuth 2.1 + PKCE auth, backed by an Aurora PostgreSQL system-of-record (35 tables, audit ledger, row-level security) and a React + Express console routing all writes through audited tools.",
+            "Led an authenticated security assessment of a customer portal and SaaS platform, discovering a CVSS 7.9 authentication bypass (silent account takeover) and a CVSS 6.4 IDOR exposing full customer PII, with reporting mapped to CCPA/GDPR exposure.",
+            "Cut a core query from ~25s to under 1s (~96% faster) via composite indexing across 5 Aurora MySQL tables (~6.5M rows), then built a zero-downtime slow-query alerting pipeline (Aurora → CloudWatch → Kinesis Firehose → New Relic).",
+            "Architected a multi-tenant cookie-consent platform on Cloudflare Workers/D1 (11-table schema, JWT auth) with GDPR/CCPA geo-compliance across 32 countries and 20 US state laws, validated by a 170+ invariant automated test suite.",
+            "Implemented data-driven improvements, analyzing site metrics (bounce rate, session duration, conversion rate) and optimizing navigation, layout, and content for better user retention.",
+            "Architected a Zero Trust access layer integrating Cloudflare Zero Trust with Microsoft Entra ID via SAML to replace legacy VPN, enforcing Conditional Access and Intune compliance (MFA, device compliance, BitLocker key escrow).",
+            "Built a multi-source prospect database in PostgreSQL (7 normalized tables) that deduplicated raw scrape output into 1,726 qualified prospects across 73 metros, plus a text classifier surfacing 541 target dealers with zero false positives.",
+            "Rebuilt the company marketing site from a legacy WordPress theme into a mobile-first React 18 SPA on Docker + AWS App Runner, using single-template routing that eliminated ~30 duplicate components and cut hero image payload by 67.5%.",
+            "Automated a Python + Playwright scraper against a lazy-loading AngularJS grid that recovered 100% of rows (vs. 52% on a naive pass) across 285 batch exports, and built a 177-test Playwright QA suite spanning 7 browser/viewport targets."
+        ],
+    },
+    {
         role: 'Web Developer',
         company: 'GOLFi',
         companyUrl: 'https://www.golfiusa.com/',
