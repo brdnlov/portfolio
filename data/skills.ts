@@ -3,39 +3,87 @@ export type SkillCategory = {
     icon: string;
     items: string[];
 };
-
 export const skills: SkillCategory[] = [
+    {
+        title: "Languages",
+        icon: "Code2",
+        items: [
+            "JavaScript (ES6+)",
+            "TypeScript",
+            "Python",
+            "VB.NET",
+            "SQL",
+        ],
+    },
     {
         title: "Frontend",
         icon: "Monitor",
         items: [
-            "HTML5, CSS3, JavaScript (ES6+)",
-            "React.js, Next.js, Astro.js",
-            "TypeScript",
-            "Tailwind CSS, Bootstrap",
-            "Responsive Web Design",
+            "React.js",
+            "Next.js",
+            "Astro.js",
+            "HTML5 & CSS3",
+            "Tailwind CSS",
             "Framer Motion",
-            "SEO Optimization & Performance Optimization",
+            "Responsive Web Design",
+            "SEO & Performance Optimization",
         ],
     },
     {
-        title: "Backend",
+        title: "Backend & Data",
         icon: "Server",
         items: [
             "Node.js",
-            "AWS (S3, EC2, Lambda)",
-            "MySQL, MongoDB",
+            "Express",
+            "PostgreSQL",
+            "MySQL",
+            "Aurora",
         ],
     },
     {
-        title: "Tools & Platforms",
-        icon: "Cog",
+        title: "Cloud & DevOps",
+        icon: "Cloud",
         items: [
+            "AWS Lightsail",
+            "AWS RDS",
+            "AWS CloudFront",
+            "AWS App Runner",
+            "Cloudflare Workers",
+            "Cloudflare D1",
+            "Cloudflare Zero Trust",
+            "Docker",
+            "CloudWatch",
+            "Vercel",
+        ],
+    },
+    {
+        title: "Security",
+        icon: "ShieldCheck",
+        items: [
+            "OAuth 2.1 / PKCE",
+            "SAML",
+            "JWT",
+            "Microsoft Entra ID",
+            "Intune",
+            "Content Security Policy (CSP)",
+            "Security Assessment (CVSS)",
+            "GDPR / CCPA",
+        ],
+    },
+    {
+        title: "Testing & Tools",
+        icon: "FlaskConical",
+        items: [
+            "Playwright",
+            "WCAG 2.1 AA",
+            "New Relic",
+            "Google Lighthouse & Analytics",
             "Git & GitHub",
+            "GitLab",
             "Figma",
-            "Google Lighthouse & Google Analytics",
             "VS Code",
-
+            "WordPress",
+            "Shopify",
         ],
     },
 ];
