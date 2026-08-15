@@ -1,6 +1,5 @@
 'use client';
 
-import { label } from "framer-motion/client";
 import { Mail, Linkedin, Github } from "lucide-react";
 
 const socialLinks = [
@@ -90,15 +89,17 @@ export function Contact() {
                                     <li key={item.label}>
                                         <a
                                             href={item.href}
+                                            target={item.href.startsWith('mailto:') ? undefined : '_blank'}
+                                            rel={item.href.startsWith('mailto:') ? undefined : 'noreferrer'}
                                             className="group flex items-center justify-between rounded-2xl border border-transparent px-4 py-3 text-sm font-semibold text-textPrimary transition hover:border-accent hover:bg-accent/10 hover:text-accent"
                                         >
                                             <span className="flex items-center gap-3">
-                                                <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-muted/50 text-accent transition group hover:bg-accent/10">
+                                                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-muted/50 text-accent transition group-hover:bg-accent/20">
                                                     <item.icon className="h-5 w-5" />
                                                 </span>
                                                 {item.label}
                                             </span>
-                                            <span className="text-xs uppercase tracking-[0.3em]">Open</span>
+                                            <span className="text-xs uppercase tracking-[0.3em] transition group-hover:translate-x-0.5">Open</span>
                                         </a>
                                     </li>
                                 );

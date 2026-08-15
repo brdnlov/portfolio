@@ -1,6 +1,7 @@
 'use client';
 
 import { useCallback, MouseEvent } from "react";
+import Image from "next/image";
 import { ArrowUpRight, GithubIcon } from "lucide-react";
 import { projects } from "@/data/projects";
 
@@ -25,17 +26,18 @@ export function Projects() {
                 {projects.map((project) => (
                     <article
                         key={project.title}
-                        className="group relative flex cursor-pointer flex-col overflow-hidden rounded-3xl border border-muted/50 bg-muted/40 shadow-soft
-                        transition"
+                        className="group relative flex cursor-pointer flex-col overflow-hidden rounded-3xl border border-muted/50 bg-muted/40 shadow-soft transition duration-300 hover:-translate-y-1 hover:border-accent/40 hover:shadow-lift"
                         onClick={() => handleCardClick(project.demo)}
                     >
                         <div className="relative h-52 overflow-hidden">
-                            <img
+                            <Image
                                 src={project.image}
                                 alt={project.title}
-                                className="h-full w-full object-cover transition duration-300 group-hover:brightness-[0.6]"
+                                fill
+                                sizes="(min-width: 1024px) 340px, 92vw"
+                                className="object-cover transition duration-300 group-hover:brightness-[0.6]"
                             />
-                            <div className="absolute inset-0 flex flex-col justify-between bg gradient-to-b from-transparent via-surface/20 to-surface/80 p-5">
+                            <div className="absolute inset-0 flex flex-col justify-between bg-gradient-to-b from-transparent via-surface/20 to-surface/80 p-5">
                                 <div className="flex items-center justify-end">
                                     <ArrowUpRight className="h-5 w-5 text-accent opacity-0 transition duration-300 group-hover:opacity-100" />
                                 </div>
@@ -47,8 +49,7 @@ export function Projects() {
                                     ))}
                                 </div>
                             </div>
-                            <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-surface/90/0 opacity-0 backdrop-blur-sm
-                            transition duration-300 group-hover:pointer-events-auto group-hover:bg-surface/90 group-hover:opacity-100">
+                            <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-0 backdrop-blur-sm transition duration-300 group-hover:pointer-events-auto group-hover:bg-surface/90 group-hover:opacity-100">
                                 <div className="flex gap-4">
                                     <a
                                         href={project.demo}
