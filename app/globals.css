@@ -17,6 +17,34 @@ a {
   text-decoration: none;
 }
 
+::selection {
+  background: rgba(61, 214, 140, 0.3);
+  color: #f5f8ff;
+}
+
+/* One visible focus treatment for every interactive element. The browser
+   default outline is nearly invisible against this background. */
+:focus-visible {
+  outline: 2px solid #3dd68c;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
