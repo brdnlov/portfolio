@@ -35,9 +35,9 @@ export const projects: Project[] = [
     {
         title: '5th Avenue Bagelry',
         description: 'Developed a responsive, performance-optimized website for 5th Avenue Bagelry in Downtown Long Beach, focused on intuitive navigation, mobile responsiveness, and improved customer conversion.',
-        image: '/placeholder.jpg',
-        tags: ['HTML', 'CSS', 'Javascript', 'AWS'],
-        demo: 'https://github.com/brdnlov/5th-Ave-Bagelry',
+        image: '/5th-ave.png',
+        tags: ['Typescript', 'Javascript', 'CSS', 'Vercel'],
+        demo: 'https://5th-ave-bagelry.vercel.app/',
         code: 'https://github.com/brdnlov/5th-Ave-Bagelry'
     },
 ];
