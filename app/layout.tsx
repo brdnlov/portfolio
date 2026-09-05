@@ -22,8 +22,8 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "Brandon Lov - Front-End/Web Developer",
-  description: "Dashboard-inspired portfolio showcasing my work and skills as a front-end/web developer.",
+  title: "Brandon Lov - Software Engineer",
+  description: "Dashboard-inspired portfolio showcasing my work and skills as a software engineer.",
 };
 
 export default function Rootlayout({

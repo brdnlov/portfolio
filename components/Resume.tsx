@@ -12,11 +12,11 @@ export function Resume() {
                     <h3 className="font-display text-3xl font-semibold">Work Experience</h3>
                     <p className="max-w-2xl text-base leading-relaxed text-textSecondary">
                         I work across interfaces, services, and brands to create dependable features. Download my full resume for detailed
-                        history, responsibilites, and technical highlights.
+                        history, responsibilities, and technical highlights.
                     </p>
                 </div>
                 <a
-                    href="/Resume_Brandon_Lov.pdf"
+                    href="/Brandon_Lov_Resume.pdf"
                     className="inline-flex items-center gap-2 rounded-2xl border border-accent/60 px-5 py-3 text-sm font-semibold text-accent transition hover:border-accent hover:bg-accent/10"
                     target="_blank"
                     rel="noreferrer"
