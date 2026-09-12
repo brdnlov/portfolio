@@ -13,15 +13,15 @@ export const experiences: Experience[] = [
         companyUrl: 'https://red7systems.com/',
         period: 'March 2026 - August 2026',
         bullets: [
-            "Built a production Model Context Protocol (MCP) server exposing 122 role-gated tools with OAuth 2.1 + PKCE auth, backed by an Aurora PostgreSQL system-of-record (35 tables, audit ledger, row-level security) and a React + Express console routing all writes through audited tools.",
-            "Led an authenticated security assessment of a customer portal and SaaS platform, discovering a CVSS 7.9 authentication bypass (silent account takeover) and a CVSS 6.4 IDOR exposing full customer PII, with reporting mapped to CCPA/GDPR exposure.",
-            "Cut a core query from ~25s to under 1s (~96% faster) via composite indexing across 5 Aurora MySQL tables (~6.5M rows), then built a zero-downtime slow-query alerting pipeline (Aurora → CloudWatch → Kinesis Firehose → New Relic).",
-            "Architected a multi-tenant cookie-consent platform on Cloudflare Workers/D1 (11-table schema, JWT auth) with GDPR/CCPA geo-compliance across 32 countries and 20 US state laws, validated by a 170+ invariant automated test suite.",
-            "Implemented data-driven improvements, analyzing site metrics (bounce rate, session duration, conversion rate) and optimizing navigation, layout, and content for better user retention.",
-            "Eliminated the legacy VPN and its ops overhead by architecting a Zero Trust access layer (Cloudflare + Entra ID SAML, Conditional Access, Intune MFA/device compliance, BitLocker escrow), removing an entire legacy attack surface.",
-            "Built a multi-source prospect database in PostgreSQL (7 normalized tables) that deduplicated raw scrape output into 1,726 qualified prospects across 73 metros, plus a text classifier surfacing 541 target dealers with zero false positives.",
-            "Rebuilt the company marketing site from a legacy WordPress theme into a mobile-first React 18 SPA on Docker + AWS App Runner, using single-template routing that eliminated ~30 duplicate components and cut hero image payload by 67.5%.",
-            "Automated a Python + Playwright scraper against a lazy-loading AngularJS grid that recovered 100% of rows (vs. 52% on a naive pass) across 285 batch exports, and built a 177-test Playwright QA suite spanning 7 browser/viewport targets."
+            "Built a production MCP server that gives the company's AI assistant safe, permission-checked access to 122 internal tools, secured with OAuth login and backed by a PostgreSQL database with a full audit trail.",
+            "Ran a security review of the customer portal and found two serious bugs: an authentication bypass (CVSS 7.9) that let attackers silently take over accounts, and an access-control flaw (CVSS 6.4) that exposed customers' personal information — both reported against CCPA/GDPR requirements.",
+            "Made a key database query 96% faster (25s → under 1s) by adding the right indexes across 5 tables with ~6.5M rows, then set up automated alerts so slow queries get caught before users notice.",
+            "Built a cookie-consent system that shows the correct privacy messaging based on each visitor's location, staying compliant with GDPR/CCPA rules across 32 countries and 20 US states and verified by 170+ automated tests.",
+            "Used site analytics (bounce rate, time on page, conversions) to guide navigation, layout, and content changes that improved user retention.",
+            "Replaced the company's old VPN with a modern Zero Trust setup (Cloudflare, Microsoft Entra SSO, MFA, device compliance checks), removing an entire class of security risk plus its constant upkeep.",
+            "Turned raw, messy web-scraping output into a clean PostgreSQL prospect database, producing 1,726 qualified leads across 73 metro areas and correctly flagging 541 target dealers with zero errors.",
+            "Rebuilt the marketing site from an outdated WordPress theme into a fast, mobile-first React web app, deleting ~30 duplicate page templates and shrinking the main image load by 67.5%.",
+            "Automated a scraper for a slow-loading data grid, recovering 100% of rows (vs. 52% before) across 285 batch exports, and built a 177-test QA suite covering 7 browsers and screen sizes."
         ],
     },
     {
@@ -30,12 +30,12 @@ export const experiences: Experience[] = [
         companyUrl: 'https://www.golfiusa.com/',
         period: 'Oct 2025 - March 2026',
         bullets: [
-            "Owned the end-to-end Tailor Brands site redesign, aligning marketing and design on one brand experience.",
-            "Boosted weekly site traffic by 728% (from ~58 to ~480 visits) in 2 weeks through SEO optimization, UX improvements, and targeted campaign promotion.",
-            "Increased engagement, growing page views from ~200/week to ~920/week and weekly visits from ~350 to 960.",
-            "Improved website performance and SEO metrics, raising Google Lighthouse score from 68 to 92 and increasing organic search impressions by 45%.",
-            "Implemented data-driven improvements, analyzing site metrics (bounce rate, session duration, conversion rate) and optimizing navigation, layout, and content for better user retention.",
-            "Collaborated cross-functionally with marketing and design teams to align website updates with brand goals and campaigns."
+            "Led the end-to-end Tailor Brands website redesign, keeping marketing and design aligned around one brand experience.",
+            "Grew weekly site traffic from ~58 to ~480 visits (+728%) in 2 weeks with SEO, UX improvements, and targeted campaigns.",
+            "Raised engagement across the site: page views jumped from ~200 to ~920 per week and weekly visits from ~350 to 960.",
+            "Improved site speed and SEO, lifting the Google Lighthouse score from 68 to 92 and boosting organic search impressions by 45%.",
+            "Used site analytics (bounce rate, time on page, conversions) to guide navigation, layout, and content changes that improved user retention.",
+            "Worked closely with marketing and design teams so website updates always matched brand goals and active campaigns."
         ],
     },
     {
@@ -44,13 +44,13 @@ export const experiences: Experience[] = [
         companyUrl: 'https://uniquely.me',
         period: 'Mar 2025 - Sept 2025',
         bullets: [
-            "Reduced page asset payloads from 100MB+ to as low as ~430KB (≤2MB max) by optimizing images, eliminating redundant assets, and improving delivery strategy.",
-            "Improved page load performance and Core Web Vitals, achieving 90+ Google Lighthouse scores through front-end performance and SEO optimizations.",
-            "Collaborated with design stakeholders to translate Figma designs into pixel-accurate, responsive UI implementations.",
-            "Partnered with technical team members to resolve Git conflicts and advanced CSS challenges, contributing to a smoother development workflow.",
-            "Refactored and cleaned legacy CSS, resolving complex layout and styling issues while improving maintainability and scalability.",
-            "Ensured cross-device accessibility and usability, delivering consistent user experience across desktop, tablet, and mobile devices.",
-            "Led implementation of UI/UX updates across multiple pages, improving mobile and tablet responsiveness through CSS refactoring and responsive layout optimization.",
+            "Cut website page sizes dramatically (100MB+ down to as low as ~430KB) by optimizing images, removing unused assets, and serving files more efficiently.",
+            "Improved page speed and Core Web Vitals, hitting 90+ Google Lighthouse scores through performance and SEO fixes.",
+            "Turned Figma designs into pixel-accurate, responsive interfaces that look and work well on any screen.",
+            "Resolved Git conflicts and tricky CSS challenges with teammates, keeping the development workflow smooth.",
+            "Cleaned up messy legacy CSS, fixing stubborn layout and styling problems while making the code easier to maintain and extend.",
+            "Made sure the site stayed consistent and accessible across desktop, tablet, and mobile devices.",
+            "Led UI/UX updates across multiple pages, improving mobile and tablet responsiveness through CSS cleanup and smarter layouts.",
         ],
     },
 ];

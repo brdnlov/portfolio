@@ -6,7 +6,7 @@ import { ArrowUpRight, GithubIcon } from "lucide-react";
 import { projects, work } from "@/data/projects";
 
 export function Projects() {
-    const handleCardClick = useCallback((url: string) => {
+    const handleCardClick = useCallback((url: string | undefined) => {
         if (url && url !== "#") {
             window.open(url, '_blank', 'noopener,noreferrer');
         }
@@ -51,15 +51,17 @@ export function Projects() {
                             </div>
                             <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-0 backdrop-blur-sm transition duration-300 group-hover:pointer-events-auto group-hover:bg-surface/90 group-hover:opacity-100">
                                 <div className="flex gap-4">
-                                    <a
-                                        href={work.demo}
-                                        target="_blank"
-                                        rel="noreferrer"
-                                        onClick={(event: MouseEvent<HTMLAnchorElement>) => event.stopPropagation()}
-                                        className="rounded-xl bg-accent px-4 py-2 text-sm font-semibold text-background shadow-soft transition hover:translate-y-0.5 hover:shadow-xl"
-                                    >
-                                        Demo
-                                    </a>
+                                    {work.demo && (
+                                        <a
+                                            href={work.demo}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            onClick={(event: MouseEvent<HTMLAnchorElement>) => event.stopPropagation()}
+                                            className="rounded-xl bg-accent px-4 py-2 text-sm font-semibold text-background shadow-soft transition hover:translate-y-0.5 hover:shadow-xl"
+                                        >
+                                            Demo
+                                        </a>
+                                    )}
                                     {work.code && (
                                         <a
                                             href={work.code}
@@ -119,15 +121,17 @@ export function Projects() {
                             </div>
                             <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-0 backdrop-blur-sm transition duration-300 group-hover:pointer-events-auto group-hover:bg-surface/90 group-hover:opacity-100">
                                 <div className="flex gap-4">
-                                    <a
-                                        href={project.demo}
-                                        target="_blank"
-                                        rel="noreferrer"
-                                        onClick={(event: MouseEvent<HTMLAnchorElement>) => event.stopPropagation()}
-                                        className="rounded-xl bg-accent px-4 py-2 text-sm font-semibold text-background shadow-soft transition hover:translate-y-0.5 hover:shadow-xl"
-                                    >
-                                        Demo
-                                    </a>
+                                    {project.demo && (
+                                        <a
+                                            href={project.demo}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            onClick={(event: MouseEvent<HTMLAnchorElement>) => event.stopPropagation()}
+                                            className="rounded-xl bg-accent px-4 py-2 text-sm font-semibold text-background shadow-soft transition hover:translate-y-0.5 hover:shadow-xl"
+                                        >
+                                            Demo
+                                        </a>
+                                    )}
                                     {project.code && (
                                         <a
                                             href={project.code}

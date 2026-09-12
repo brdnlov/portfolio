@@ -3,7 +3,7 @@ export type Project = {
     description: string;
     image: string;
     tags: string[];
-    demo: string;
+    demo?: string;
     code?: string;
 };
 
@@ -41,6 +41,20 @@ export const work: Project[] = [
 ];
 
 export const projects: Project[] = [
+    {
+        title: 'RAG API with FastAPI',
+        description: 'A local, zero-cloud REST API that grounds LLM answers in your own documents (FastAPI + ChromaDB + Ollama) with multi-tenant isolation and live knowledge ingestion.',
+        image: '/placeholder.jpg',
+        tags: ['Python', 'FastAPI', 'ChromaDB', 'RAG', 'Local LLMs'],
+        code: 'https://github.com/brdnlov/rag-api-fastapi'
+    },
+    {
+        title: 'Security/Compliance RAG Assistant',
+        description: 'A RAG assistant that answers cited questions across NIST 800-53, OWASP ASVS, and GDPR using hybrid retrieval (BM25 + embeddings) with reranking, evaluated at 0.911 citation accuracy.',
+        image: '/placeholder.jpg',
+        tags: ['Python', 'FastAPI', 'RAG', 'AI Model Evaluation'],
+        code: 'https://github.com/brdnlov/security-compliance-rag-assistant'
+    },
     {
         title: 'Anime Vault',
         description: 'A dynamic anime discovery platform where users can browse, search, and explore their favorite series through a responsive web interface.',
