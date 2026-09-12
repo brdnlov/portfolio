@@ -20,6 +20,7 @@ import {
     Mail,
     Linkedin,
     Github,
+    Brain,
     FileText,
 } from "lucide-react";
 
@@ -49,4 +50,5 @@ export const Icons: IconMap = {
     Linkedin,
     Github,
     FileText,
+    Brain,
 };

@@ -35,9 +35,23 @@ export const skills: SkillCategory[] = [
         items: [
             "Node.js",
             "Express",
+            "FastAPI",
             "PostgreSQL",
             "MySQL",
             "Aurora",
+        ],
+    },
+    {
+        title: "AI / ML",
+        icon: "Brain",
+        items: [
+            "LLM Tool-Calling & Agent Architecture (MCP)",
+            "RAG",
+            "Hybrid Vector Search (ChromaDB, Qdrant)",
+            "Embeddings & Evaluation",
+            "Prompt Engineering",
+            "Claude Code",
+            "AI-Assisted Development",
         ],
     },
     {
